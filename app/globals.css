@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --eko-green: #22c55e;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Taslağındaki oval yeşil başlık yapısı */
+.header-oval {
+  @apply bg-green-400 text-black px-10 py-2 rounded-full inline-block font-bold border-2 border-black mb-8 shadow-sm;
+}
+
+/* Yeşil Algoritma Butonları */
+.eko-button {
+  @apply bg-green-500 text-white font-bold py-3 px-8 rounded-full 
+         hover:bg-green-600 transition-all active:scale-95 shadow-lg;
+}
+
+.input-select {
+  @apply w-full p-3 border-2 border-green-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-300 bg-white;
+}
